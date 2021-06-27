@@ -1,0 +1,13 @@
+body {background-color: #e0e0eb;}
+.iframe{
+	display: inline-block;
+	text-align: center;
+}
+.col-lg{
+	text-align: center;
+}
+.center{
+	
+	display: flex;
+	justify-content: center;
+}
