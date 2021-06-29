@@ -4,7 +4,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Coarses</a></li>
+                    <li><a href="#">Sus</a></li>
                     <li><a href="#">Resume</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
