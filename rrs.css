@@ -2,6 +2,7 @@ body {background-color: #e0e0eb;}
 .iframe{
 	display: inline-block;
 	text-align: center;
+	margin: 0 auto;
 }
 .col-lg{
 	text-align: center;
