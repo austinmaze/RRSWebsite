@@ -78,7 +78,7 @@
     <label for="123">False</label><br>
 
     <div>
-    <button type="button" class="buttons" id="backButton">Back</button> <button type="button" class="buttons" onclick="score()" id="submitButton">Submit</button> <button type="button" class="buttons" id="next" style="display:none;">Next</button><br>
+    <button type="button" class="buttons" id="backButton" href="Training2.html">Back</button> <button type="button" class="buttons" onclick="score()" id="submitButton">Submit</button><br>
     </div>
 
     <script>
@@ -125,7 +125,6 @@
           alert("Correct answers: " + score);
 
           if (score >= 4) {
-            document.getElementById("next").style.display = "inline";
             alert("Congratulations! You have completed this training course!");
           }
           else{
