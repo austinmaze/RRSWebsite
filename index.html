@@ -143,11 +143,16 @@
                     }
                 }
             }
-          alert(score);
+          alert("Correct answers: " + score);
 
           if (score >= 4) {
-            document.getElementById("next").style.display = "block";
+            document.getElementById("next").style.display = "inline";
+            alert("Congratualtions! Continue by clicking the 'Next' button at the bottom");
           }
+          else{
+          	alert("You must get a score of 80% or better to continue")
+          }
+
 
         }
 </script>
