@@ -91,7 +91,7 @@
     </p>
   </div>
 <div>
-    <button type="button" class="buttons" onclick="score()" id="submitButton">Submit</button>	<button type="button" class="buttons" id="next">Next</button><br>
+    <button type="button" class="buttons" onclick="score()" id="submitButton">Submit</button>	<button type="button" class="buttons" id="next" style="display:none;">Next</button><br>
 </div>
 
 <script>
@@ -144,6 +144,11 @@
                 }
             }
           alert(score);
+
+          if (score >= 4) {
+            document.getElementById("next").style.display = "block";
+          }
+
         }
 </script>
 
