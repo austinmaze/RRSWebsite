@@ -22,3 +22,19 @@ body {background-color: #e0e0eb;}
 .questions{
 	text-decoration-style: bold;
 }
+#loginBox {
+    position: relative;
+    text-align: center;
+    margin-top: 100px !important;
+    border: 2px solid white;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    }
+ #borderBox{
+ 	    position: relative;
+    text-align: center;
+    margin-top: 100px !important;
+    border: 2px solid white;
+    padding-bottom: 15px;
+    padding-top: 10px;
+ }
