@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="rrs.css">
+    <script src="scoring.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">RRS Online Training</h1>
+      <hr class="my-4">
+        <p>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand">Training Part 1</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+<!--
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Training 1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Training2.html">Training 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Training3.html">Training 3</a>
+            </li>
+          </ul>
+        </div>
+    -->
+        </p>
+    </div>
+<!-- Navbar code above ^^^-->
+<!--https://youtu.be/gf6NHK-jXGc-->
+<!-- End Jumbotron -->
+<div class="container" id="borderBox">
+  <p>
+    <!--<iframe width="420" height="315" src="https://youtu.be/gf6NHK-jXGc">-->
+    <iframe src="https://www.youtube.com/embed/7wxi_pjLtbM" class="center-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+</div><br>
+<div class="container">
+  <div class="row">
+  <div class="col">
+<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+
+  <div class="container">
+  <div class="row">
+  <div class="col">
+<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+  <div class ="container">
+  <p><strong>There are no hazardous materials in your facility.</strong><br>
+    <input type="radio" id="111" name="q1" value="incorrect">
+    <label for="111">True</label><br>
+    <input type="radio" id="112" name="q1" value="correct">
+    <label for="112">False</label><br>
+  </div>
+  <div class = "container">
+    <p><strong>What does S I N stand for?</strong><br> 
+  <input type="radio" id="113" name="q2" value="false"></input> 
+    <label for="113">Safety Is Necessary</label><br>
+    <input type="radio" id="114" name="q2" value="false"></input> 
+    <label for="114">Stop Isolate Now</label><br>
+    <input type="radio" id="115" name="q2" value="correct"></input> 
+    <label for="115">Safety Isolate Notify</label><br>
+   </div>
+
+   <div class = "container">
+   <p><strong>First Receiver Awareness and First Receiver Operations are classified as DEFENSIVE approaches.</strong><br>
+   <input type="radio" id="116" name="q3" value="correct">
+     <label for="116">True</label><br>
+     <input type="radio" id="117" name="q3" value="false">
+     <label for="117">False</label><br>
+     </p>
+   </div>
+
+  <div class = "container">
+    <p><strong>Victims of a hazmat exposure are likely to seek care from the nearest Emergency Department and then fan out to other hospitals in surrounding areas.</strong><br>
+      <input type="radio" id="118" name="q4" value="correct">
+      <label for="118">True</label><br>
+      <input type="radio" id="119" name="q4" value="false">
+      <label for="119">False</label><br>
+    </p>
+  </div>
+  <div class = "container">
+    <p><strong>There is NO one definition of a hazardous material, but a common definition is: “Any substance to which exposure results or may result in adverse effects on life, environment and property.</strong><br>
+      <input type="radio" id="120" name="q5" value="correct">
+      <label for="120">True</label><br>
+      <input type="radio" id="121" name="q5" value="false">
+      <label for="121">False</label><br>
+    </p>
+  </div>
+<div>
+    <button type="button" class="buttons" onclick="score()" id="submitButton">Submit</button> 
+    <button type="button" class="buttons" id="next" style="display:none;" onclick="location.href='Training2.html';">Next</button><br>
+</div>
+
+<script>
+  function score() {
+        var ele = document.getElementsByName('q1');
+        var score = 0;  
+            
+          for(i = 0; i < ele.length; i++) {
+              if(ele[i].checked) {
+                  if(ele[i].value == "correct") {
+                      score++;
+                  }
+              }
+          }
+        
+        var ele = document.getElementsByName('q2');
+            
+          for(i = 0; i < ele.length; i++) {
+              if(ele[i].checked) {
+                  if(ele[i].value == "correct") {
+                      score++;
+                  }
+              }
+          }
+          var ele = document.getElementsByName('q3');
+            
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked) {
+                    if(ele[i].value == "correct") {
+                        score++;
+                    }
+                }
+            }
+            var ele = document.getElementsByName('q4');
+            
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked) {
+                    if(ele[i].value == "correct") {
+                        score++;
+                    }
+                }
+            }
+            var ele = document.getElementsByName('q5');
+            
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked) {
+                    if(ele[i].value == "correct") {
+                        score++;
+                    }
+                }
+            }
+          alert("Correct answers: " + score);
+
+          if (score >= 4) {
+            document.getElementById("next").style.display = "inline";
+            alert("Congratulations! Continue by clicking the 'Next' button at the bottom");
+          }
+          else{
+            alert("You must get a score of 80% or better to continue.")
+          }
+
+
+        }
+</script>
+
+
+
+
+<!--</div>
+</div>
+<div class="col-sm">
+<div id="list-example" class="list-group">
+  <a class="list-group-item list-group-item-action" href="#list-item-1">An Introduction</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-2">Senior Showcase Demo Reel</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-3">What is GIMM?</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-4">What are Artifacts?</a>
+</div>
+</div>
+-->
+
+</html>
+
