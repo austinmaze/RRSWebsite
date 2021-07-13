@@ -53,7 +53,7 @@ public class Main {
     return "index";
   }
 
-  @RequestMapping(value = "/Training1.html", method = RequestMethod.POST)
+  @RequestMapping("/Training1")
   String trainingone() {
     return "/Training1.html";
   }
