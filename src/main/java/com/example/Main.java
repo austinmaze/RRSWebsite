@@ -55,7 +55,7 @@ public class Main {
 
   @RequestMapping("/Training1")
   String trainingone() {
-    return "/Training1.html";
+    return "Training1";
   }
 
   @RequestMapping("/db")
